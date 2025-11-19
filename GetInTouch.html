@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>1st Portfolio Design</title>
+</head>
+<body style="font-family: 'Raleway';">
+    <!-- ===== HEADER SECTION ===== -->
+    <section class="bg-black text-[#9C9C9C] ">
+        <nav class="fixed top-0 left-0 right-0 bg-[#1B1B1B] flex justify-between items-center py-3 px-6 mx-6 rounded-b-lg
+                    lg:mx-30 lg:px-20 lg:py-8
+                    md:mx-5 md:px-2 md:py-8">
+            <div class="relative">
+                <button onclick="toggleDropdown()" class="p-3 bg-gray-800 text-white hover:text-gray-400 brightness-30 rounded-lg hover:bg-gray-700 md:hidden lg:hidden">
+                     <strong>Top Menu <span class="text-sm text-gray-400 hover:text-blue-400">▼</strong></span>
+                </button>
+                <div id="dropdown" class="hidden text-white absolute flex flex-col gap-2 mt-3 bg-gray-500 w-40 p-[10px] rounded-md
+                                          lg:flex lg:flex-row lg:gap-20 lg:w-full lg:bg-transparent lg:static lg:text-[#9C9C9C] lg:mt-0 lg:p-0
+                                          md:flex md:flex-row md:gap-7 md:w-full md:bg-transparent md:static md:text-[#9C9C9C] md:mt-0 md:p-0">
+                  <a href="home.html" class="hover:text-blue-400">Home</a>
+                  <a href="CaseStudies.html" class="hover:text-blue-400">Case Studies</a>
+                  <a href="testimonials.html" class="hover:text-blue-400">Testimonials</a>
+                  <a href="RecentWork.html" class="hover:text-blue-400">Recent Work</a>
+                  <a href="GetInTouch.html" class="text-blue-200">Get In Touch</a>
+                </div>
+            </div>
+            <div>
+                <i class="fa-brands fa-linkedin-in hover:text-pink-200"></i>
+                <i class="fa-brands fa-behance hover:text-pink-200"></i>
+                <i class="fa-brands fa-twitter hover:text-pink-200"></i>
+            </div>
+        </nav>
+        
+
+    </section>
+ 
+    <!-- ===== GET IN TOUCH ===== -->
+     <section class="bg-black text-white pt-30 lg:pt-40">
+        <p class="text-center pt-4 text-3xl font-bold">Get In Touch</p>
+        <p class="text-center text-[#9C9C9C] pt-8 px-4 md:px-30 lg:px-110">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="flex items-center justify-center mx-8 md:mx-20 lg:mx-100">
+            <form action="" class="mt-12 mb-20 w-full">
+                <div class="lg:flex lg:flex-row lg:gap-4
+                            md:flex md:flex-row md:gap-4">
+                    <div class="mb-4 w-full">
+                        <p>Email</p>
+                        <input type="email" placeholder="Please enter your email" class="bg-white text-black placeholder-gray-400 w-full px-3 py-1">
+                    </div>
+                    <div class="mb-4 w-full">
+                        <p>Mobile</p>
+                        <input type="number" placeholder="Enter mobile" class="bg-white  text-black placeholder-gray-400 w-full px-3 py-1">
+                    </div>
+                </div>
+                <div class="mb-4 w-full">
+                    <p>Message</p>
+                    <textarea name="" id="" rows="5" placeholder="Enter your message" class="bg-white text-black placeholder-gray-400 w-full px-3 py-2"></textarea>
+                </div>
+                <div>
+                    <button class="bg-gradient-to-r to-[#3F8E00] from-[#62BA1B] shadow-lg shadow-[#3F8E00] hover:brightness-80 p-2 w-full text-lg text-white font-bold rounded-md lg:px-8 lg:py-4">Submit ></button>
+                </div>
+            </form>
+        </div>
+        <footer class="tracking-[8px] bg-[#1B1B1B] text-center text-[#9C9C9C] md:mt-55 lg:mt-0 py-4">Made With <span class="text-red-400">❤</span></footer>
+     </section>
+    
+</body>
+<script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById("dropdown");
+      dropdown.classList.toggle("hidden");
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+      const dropdown = document.getElementById("dropdown");
+      const button = event.target.closest("button");
+      if (!button && !dropdown.contains(event.target)) {
+        dropdown.classList.add("hidden");
+      }
+    });
+  </script>
+</html>

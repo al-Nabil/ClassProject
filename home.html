@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>1st Portfolio Design</title>
+</head>
+<body style="font-family: 'Raleway';">  <!-- IBM Plex Mono-->
+    <!-- ===== HEADER SECTION ===== -->
+    <section class="bg-black text-[#9C9C9C] min-h-screen flex flex-col justify-center lg:pt-40">
+        <nav class="fixed top-0 left-0 right-0 bg-[#1B1B1B] flex justify-between items-center py-3 px-6 mx-6 rounded-b-lg
+                    lg:mx-30 lg:px-20 lg:py-8
+                    md:mx-5 md:px-2 md:py-8">
+            <div class="relative">
+                <button onclick="toggleDropdown()" class="p-3 bg-gray-800 text-white hover:text-gray-400 brightness-30 rounded-lg hover:bg-gray-700 md:hidden lg:hidden">
+                     <strong>Top Menu <span class="text-sm text-gray-400 hover:text-blue-400">▼</strong></span>
+                </button>
+                <div id="dropdown" class="hidden text-white absolute flex flex-col gap-2 mt-3 bg-gray-500 w-40 p-[10px] rounded-md
+                                          lg:flex lg:flex-row lg:gap-20 lg:w-full lg:bg-transparent lg:static lg:text-[#9C9C9C] lg:mt-0 lg:p-0
+                                          md:flex md:flex-row md:gap-7 md:w-full md:bg-transparent md:static md:text-[#9C9C9C] md:mt-0 md:p-0">
+                  <a href="home.html" class="text-blue-200">Home</a>
+                  <a href="CaseStudies.html" class="hover:text-blue-400">Case Studies</a>
+                  <a href="testimonials.html" class="hover:text-blue-400">Testimonials</a>
+                  <a href="RecentWork.html" class="hover:text-blue-400">Recent Work</a>
+                  <a href="GetInTouch.html" class="hover:text-blue-400">Get In Touch</a>
+                </div>
+            </div>
+            <div>
+                <i class="fa-brands fa-linkedin-in hover:text-pink-200"></i>
+                <i class="fa-brands fa-behance hover:text-pink-200"></i>
+                <i class="fa-brands fa-twitter hover:text-pink-200"></i>
+            </div>
+        </nav>
+        <div class="flex flex-col gap-5 items-center justify-center my-30 mx-8
+                    lg:flex-row-reverse lg:mx-45
+                    md:flex-row-reverse md:mx-8">
+            <div>
+                <img src="picture.png" alt="" class="rounded-full h-60 w-60 lg:h-100 lg:w-100 md:h-80 md:w-80">
+            </div>
+            <div class="space-y-6 ml-5 lg:w-1/2 md:w-1/2 lg:space-y-10 md:space-y-8">
+                <h1 class="text-white text-3xl font-bold lg:text-5xl lg:font-semibold">Your Name Here</h1>
+                <p class="pr-10"><strong>Intro text:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <button class="bg-gradient-to-r to-[#3F8E00] from-[#62BA1B] shadow-lg shadow-[#3F8E00] hover:brightness-80 p-2 text-lg text-white font-bold rounded-md lg:px-8 lg:py-4">Let's Get Started ></button>
+            </div>
+        </div>
+        <div class="mx-8 mb-30 lg:mx-45 md:mx-10 md:mt-15">
+            <p class="text-white mb-5">Worked with</p>
+            <div class="flex items-center justify-between">
+                <div class="border border-gray-600 flex items-center justify-center h-8 lg:h-[60px] md:h-[45px] md:w-[135px] lg:w-[180px] w-17 rounded-sm">
+                    <img src="Logo/clickupw.png" alt="" class="w-15 md:w-20 lg:w-25 object-contain brightness-50">
+                </div>
+                <div class="border border-gray-600 flex items-center justify-center h-8 lg:h-[60px] md:h-[45px] md:w-[135px] lg:w-[180px] w-17 rounded-sm">
+                    <img src="Logo/dropboxw.png" alt="" class="w-15 md:w-20 lg:w-25 object-contain brightness-50">
+                </div>
+                <div class="border border-gray-600 flex items-center justify-center h-8 lg:h-[60px] md:h-[45px] md:w-[135px] lg:w-[180px] w-17 rounded-sm">
+                    <img src="Logo/paychex.png" alt="" class="w-15 md:w-20 lg:w-25 object-contain brightness-50">
+                </div>
+                <div class="border border-gray-600 flex items-center justify-center h-8 lg:h-[60px] md:h-[45px] md:w-[135px] lg:w-[180px] w-17 rounded-sm">
+                    <img src="Logo/elastic.png" alt="" class="w-15 md:w-20 lg:w-25 object-contain brightness-50">
+                </div>
+                <div class="border border-gray-600 flex items-center justify-center h-8 lg:h-[60px] md:h-[45px] md:w-[135px] lg:w-[180px] w-17 rounded-sm">
+                    <img src="Logo/stripe.png" alt="" class="w-15 md:w-20 lg:w-25 object-contain brightness-50">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ===== CASE STUDIES ===== -->
+    <section class="mt-30 mb-30">
+      <h1 class="text-center text-3xl font-bold pt-4">Case Studies</h1>
+      <p class="text-[#9C9C9C] text-center pt-8 px-4 lg:mx-90">Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <div class="flex flex-col items-center justify-center
+                  lg:flex-row-reverse lg:mx-80 lg:my-20">
+          <div class="mx-8 mt-14 lg:mt-0">
+            <img src="picture 2.png" alt="" class="rounded-md">
+          </div>
+          <div class="space-y-2 mt-4 mx-8 lg:w-1/2 lg:text-xs">
+            <span class="text-[#FFA217] text-xs font-bold px-4 py-1">Fintech</span>
+            <h2 class="text-2xl font-bold pt-1">Work name here</h2>
+            <p class="text-[#9C9C9C] pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <button class="bg-[#FFA217] text-white font-bold my-8 px-4 py-2 rounded-md hover:brightness-80">View case study ></button>
+          </div>
+      </div>
+      <div class="flex flex-col items-center justify-center
+                  lg:flex-row lg:mx-80 lg:my-20">
+        <div class="mx-8 mt-4 lg:mt-0">
+            <img src="picture 3.png" alt="" class="rounded-md">
+        </div>
+        <div class="space-y-2 mt-4 mx-8 lg:w-1/2 lg:text-xs">
+            <span class="text-[#000AFF] bg-[#D0E6FF] text-xs font-bold px-2 py-1 rounded-xl">EdTech</span>
+            <h2 class="text-2xl font-bold pt-2">Work name here</h2>
+            <p class="text-[#9C9C9C] pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <button class="bg-[#000AFF] text-white font-bold my-8 px-4 py-2 rounded-md hover:brightness-80">View case study ></button>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center
+                  lg:flex-row-reverse lg:mx-80 lg:my-20">
+        <div class="mx-8 mt-4 lg:mt-0">
+            <img src="picture 4.png" alt="" class="rounded-md">
+        </div>
+        <div class="space-y-2 mt-4 mx-8 lg:w-1/2 lg:text-xs">
+            <span class="text-[#2AB090] bg-[#E0FFF8] text-xs font-bold px-2 py-1 rounded-xl">EdTech</span>
+            <h2 class="text-2xl font-bold pt-2">Work name here</h2>
+            <p class="text-[#9C9C9C] pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <button class="bg-[#2AB090] text-white font-bold my-8 px-4 py-2 rounded-md hover:brightness-80">View case study ></button>
+        </div>
+      </div>
+    </section>
+    <!-- ===== TESTIMONIALS ===== -->
+     <section class="bg-black text-white pt-30 pb-30">
+        <h1 class="text-center text-3xl font-bold">Testimonials</h1>
+        <p class="text-center text-[#9C9C9C] pt-8 px-4 lg:mx-90">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-6 lg:mx-60 mt-16">
+            <div class="relative px-6 pt-8 pb-4 rounded-lg">
+                    <div class="absolute top-0 left-0 w-[calc(100%_-_2px)] h-[2px] bg-gradient-to-r from-[#484848] to-transparent rounded-t-lg"></div>
+                    <!-- Left Border -->
+                    <div class="absolute top-0 left-0 h-[calc(100%_-_2px)] w-[1px] bg-[#484848] rounded-l-lg"></div>
+                    <!-- Bottom Border -->
+                    <div class="absolute bottom-0 left-0 w-[calc(100%_-_2px)] h-[2px] bg-gradient-to-r from-[#484848] to-transparent rounded-b-lg"></div>
+                    <!-- Right Border (transparent) -->
+                    <div class="absolute top-0 right-0 h-[calc(100%_-_2px)] w-[1px] bg-transparent rounded-r-lg"></div>
+                <div class="absolute -top-4 left-2 text-7xl brightness-60 leading-none">“</div>
+                <p class="text-[#9C9C9C] text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div class="flex items-center gap-4 mt-4">
+                    <img src="image/Client photo 1.png" alt="">
+                    <span>Client Name</span>
+                </div>
+            </div>
+            <div class="relative px-6 pt-8 pb-4 rounded-lg">
+                    <div class="absolute top-0 left-0 w-[calc(100%_-_2px)] h-[2px] bg-gradient-to-l md:bg-gradient-to-r lg:bg-gradient-to-r from-[#484848] to-transparent rounded-t-lg"></div>
+                    <!-- Left Border -->
+                    <div class="absolute top-0 left-0 h-[calc(100%_-_2px)] w-[2px] md:w-[1px] lg:w-[1px] bg-gradient-to-t from-[#484848] to-transparent md:bg-[#484848] lg:bg-[#484848] rounded-l-lg"></div>
+                    <!-- Bottom Border -->
+                    <div class="absolute bottom-0 left-0 w-[calc(100%_-_2px)] h-[2px] bg-gradient-to-r from-[#484848] to-transparent rounded-b-lg"></div>
+                    <!-- Right Border (transparent) -->
+                    <div class="absolute top-0 right-0 h-[calc(100%_-_2px)] w-[1px] bg-gradient-to-b from-[#484848] to-transparent md:bg-none md:bg-transparent lg:bg-none lg:bg-transparent rounded-r-lg"></div>
+                <div class="absolute -top-4 right-2 text-7xl brightness-60 leading-none block md:hidden lg:hidden">”</div>
+                <div class="absolute -top-4 left-2 text-7xl brightness-60 leading-none hidden md:block">“</div>
+                <div class="absolute -top-4 left-2 text-7xl brightness-60 leading-none hidden lg:block">“</div>
+                <p class="text-[#9C9C9C] text-sm">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div class="flex items-center gap-4 mt-4">
+                    <img src="image/Client photo 2.png" alt="">
+                    <span>Client Name</span>
+                </div>
+            </div>
+            <div class="relative px-6 pt-8 pb-4 rounded-lg">
+                    <div class="absolute top-0 left-0 w-[calc(100%_-_2px)] h-[2px] bg-gradient-to-r from-[#484848] to-transparent rounded-t-lg"></div>
+                    <!-- Left Border -->
+                    <div class="absolute top-0 left-0 h-[calc(100%_-_2px)] w-[1px] bg-[#484848] rounded-l-lg"></div>
+                    <!-- Bottom Border -->
+                    <div class="absolute bottom-0 left-0 w-[calc(100%_-_2px)] h-[2px] bg-gradient-to-r from-[#484848] to-transparent rounded-b-lg"></div>
+                    <!-- Right Border (transparent) -->
+                    <div class="absolute top-0 right-0 h-[calc(100%_-_2px)] w-[1px] bg-transparent rounded-r-lg"></div>
+                <div class="absolute -top-4 left-2 text-7xl brightness-60 leading-none">“</div>
+                <p class="text-[#9C9C9C] text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div class="flex items-center gap-4 mt-4">
+                    <img src="image/Client photo 3.png" alt="">
+                    <span>Client Name</span>
+                </div>
+            </div>
+            <div class="relative px-6 pt-8 pb-4 rounded-lg">
+                    <div class="absolute top-0 left-0 w-[calc(100%_-_2px)] h-[2px] bg-gradient-to-l md:bg-gradient-to-r lg:bg-gradient-to-r from-[#484848] to-transparent rounded-t-lg"></div>
+                    <!-- Left Border -->
+                    <div class="absolute top-0 left-0 h-[calc(100%_-_2px)] w-[2px] md:w-[1px] lg:w-[1px] bg-gradient-to-t from-[#484848] to-transparent md:bg-[#484848] lg:bg-[#484848] rounded-l-lg"></div>
+                    <!-- Bottom Border -->
+                    <div class="absolute bottom-0 left-0 w-[calc(100%_-_2px)] h-[2px] bg-gradient-to-r from-[#484848] to-transparent rounded-b-lg"></div>
+                    <!-- Right Border (transparent) -->
+                    <div class="absolute top-0 right-0 h-[calc(100%_-_2px)] w-[1px] bg-gradient-to-b from-[#484848] to-transparent md:bg-none md:bg-transparent lg:bg-none lg:bg-transparent rounded-r-lg"></div>
+                <div class="absolute -top-4 right-2 text-7xl brightness-60 leading-none block md:hidden lg:hidden">”</div>
+                <div class="absolute -top-4 left-2 text-7xl brightness-60 leading-none hidden md:block">“</div>
+                <div class="absolute -top-4 left-2 text-7xl brightness-60 leading-none hidden lg:block">“</div>
+                <p class="text-[#9C9C9C] text-sm">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div class="flex items-center gap-4 mt-4">
+                    <img src="image/Client photo 4.png" alt="">
+                    <span>Client Name</span>
+                </div>
+            </div>
+        </div>
+
+     </section>
+     <!-- ===== RECENT WORK ===== -->
+     <section class="mt-30 mb-30">
+          <h1 class="text-center text-3xl font-bold pt-4">Recent Work</h1>
+          <p class="text-[#9C9C9C] text-center pt-8 px-4 lg:mx-90">Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <div class="flex flex-col md:flex-row lg:flex-row lg:mx-80 lg:mt-20">
+             <div class="flex flex-col justify-center md:flex-1 lg:flex-1">
+                  <div class="mx-8 mt-14 lg:mt-0">
+                    <img src="RW 1.png" alt="" class="rounded-md">
+                  </div>
+                  <div class="space-y-2 mt-4 mx-8 lg:mx-10 lg:text-xs">
+                    <h2 class="text-2xl font-bold pt-1">Work name here</h2>
+                    <p class="text-[#9C9C9C] pt-2">Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <button class="bg-[#3F8E00] border border-[#62BA1B] text-white font-bold mt-8 px-4 py-2 rounded-md hover:brightness-80">Know more ></button>
+                  </div>
+              </div>
+              <div class="flex flex-col items-center justify-center md:flex-1 lg:flex-1">
+                  <div class="mx-8 mt-14 lg:mt-0">
+                    <img src="RW 2.png" alt="" class="rounded-md">
+                  </div>
+                  <div class="space-y-2 mt-4 mx-8 lg:mx-10 lg:text-xs">
+                    <h2 class="text-2xl font-bold pt-1">Work name here</h2>
+                    <p class="text-[#9C9C9C] pt-2">Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u</p>
+                    <button class="bg-[#3F8E00] border border-[#62BA1B] text-white font-bold mt-8 px-4 py-2 rounded-md hover:brightness-80">Know more ></button>
+                  </div>
+              </div>
+          </div>
+     </section>
+    <!-- ===== GET IN TOUCH ===== -->
+     <section class="bg-black text-white pt-30 lg:pt-40">
+        <h1 class="text-center pt-4 text-3xl font-bold">Get In Touch</h1>
+        <p class="text-center text-[#9C9C9C] pt-8 px-4 md:px-30 lg:px-110">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="flex items-center justify-center mx-8 md:mx-20 lg:mx-100">
+            <form action="" class="mt-12 mb-20 w-full">
+                <div class="lg:flex lg:flex-row lg:gap-4
+                            md:flex md:flex-row md:gap-4">
+                    <div class="mb-4 w-full">
+                        <p>Email</p>
+                        <input type="email" placeholder="Please enter your email" class="bg-white text-black placeholder-gray-400 w-full px-3 py-1">
+                    </div>
+                    <div class="mb-4 w-full">
+                        <p>Mobile</p>
+                        <input type="number" placeholder="Enter mobile" class="bg-white  text-black placeholder-gray-400 w-full px-3 py-1">
+                    </div>
+                </div>
+                <div class="mb-4 w-full">
+                    <p>Message</p>
+                    <textarea name="" id="" rows="5" placeholder="Enter your message" class="bg-white text-black placeholder-gray-400 w-full px-3 py-2"></textarea>
+                </div>
+                <div>
+                    <button class="bg-gradient-to-r to-[#3F8E00] from-[#62BA1B] shadow-lg shadow-[#3F8E00] hover:brightness-80 p-2 w-full text-lg text-white font-bold rounded-md lg:px-8 lg:py-4">Submit ></button>
+                </div>
+            </form>
+        </div>
+        <footer class="tracking-[8px] bg-[#1B1B1B] text-center text-[#9C9C9C] md:mt-55 lg:mt-0 py-4">Made With <span class="text-red-400">❤</span></footer>
+     </section>
+    
+</body>
+<script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById("dropdown");
+      dropdown.classList.toggle("hidden");
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+      const dropdown = document.getElementById("dropdown");
+      const button = event.target.closest("button");
+      if (!button && !dropdown.contains(event.target)) {
+        dropdown.classList.add("hidden");
+      }
+    });
+  </script>
+</html>

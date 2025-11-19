@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>1st Portfolio Design</title>
+</head>
+<body style="font-family: 'Raleway';">
+    <!-- ===== HEADER SECTION ===== -->
+    <section class="bg-black text-[#9C9C9C] ">
+        <nav class="fixed top-0 left-0 right-0 bg-[#1B1B1B] flex justify-between items-center py-3 px-6 mx-6 rounded-b-lg
+                    lg:mx-30 lg:px-20 lg:py-8
+                    md:mx-5 md:px-2 md:py-8">
+            <div class="relative">
+                <button onclick="toggleDropdown()" class="p-3 bg-gray-800 text-white hover:text-gray-400 brightness-30 rounded-lg hover:bg-gray-700 md:hidden lg:hidden">
+                     <strong>Top Menu <span class="text-sm text-gray-400 hover:text-blue-400">▼</strong></span>
+                </button>
+                <div id="dropdown" class="hidden text-white absolute flex flex-col gap-2 mt-3 bg-gray-500 w-40 p-[10px] rounded-md
+                                          lg:flex lg:flex-row lg:gap-20 lg:w-full lg:bg-transparent lg:static lg:text-[#9C9C9C] lg:mt-0 lg:p-0
+                                          md:flex md:flex-row md:gap-7 md:w-full md:bg-transparent md:static md:text-[#9C9C9C] md:mt-0 md:p-0">
+                  <a href="home.html" class="hover:text-blue-400">Home</a>
+                  <a href="CaseStudies.html" class="text-blue-200">Case Studies</a>
+                  <a href="testimonials.html" class="hover:text-blue-400">Testimonials</a>
+                  <a href="RecentWork.html" class="hover:text-blue-400">Recent Work</a>
+                  <a href="GetInTouch.html" class="hover:text-blue-400">Get In Touch</a>
+                </div>
+            </div>
+            <div>
+                <i class="fa-brands fa-linkedin-in hover:text-pink-200"></i>
+                <i class="fa-brands fa-behance hover:text-pink-200"></i>
+                <i class="fa-brands fa-twitter hover:text-pink-200"></i>
+            </div>
+        </nav>
+        
+
+    </section>
+ 
+    <!-- ===== CASE STUDIES ===== -->
+    <section class="mt-30">
+      <h1 class="text-center text-3xl font-bold pt-4">Case Studies</h1>
+      <p class="text-[#9C9C9C] text-center pt-8 px-4 lg:mx-90">Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <div class="flex flex-col items-center justify-center
+                  lg:flex-row-reverse lg:mx-80 lg:my-20">
+          <div class="mx-8 mt-14 lg:mt-0">
+            <img src="picture 2.png" alt="" class="rounded-md">
+          </div>
+          <div class="space-y-2 mt-4 mx-8 lg:w-1/2 lg:text-xs">
+            <span class="text-[#FFA217] text-xs font-bold px-4 py-1">Fintech</span>
+            <h2 class="text-2xl font-bold pt-1">Work name here</h2>
+            <p class="text-[#9C9C9C] pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <button class="bg-[#FFA217] text-white font-bold my-8 px-4 py-2 rounded-md hover:brightness-80">View case study ></button>
+          </div>
+      </div>
+      <div class="flex flex-col items-center justify-center
+                  lg:flex-row lg:mx-80 lg:my-20">
+        <div class="mx-8 mt-4 lg:mt-0">
+            <img src="picture 3.png" alt="" class="rounded-md">
+        </div>
+        <div class="space-y-2 mt-4 mx-8 lg:w-1/2 lg:text-xs">
+            <span class="text-[#000AFF] bg-[#D0E6FF] text-xs font-bold px-2 py-1 rounded-xl">EdTech</span>
+            <h2 class="text-2xl font-bold pt-2">Work name here</h2>
+            <p class="text-[#9C9C9C] pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <button class="bg-[#000AFF] text-white font-bold my-8 px-4 py-2 rounded-md hover:brightness-80">View case study ></button>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center
+                  lg:flex-row-reverse lg:mx-80 lg:my-20">
+        <div class="mx-8 mt-4 lg:mt-0">
+            <img src="picture 4.png" alt="" class="rounded-md">
+        </div>
+        <div class="space-y-2 mt-4 mx-8 lg:w-1/2 lg:text-xs">
+            <span class="text-[#2AB090] bg-[#E0FFF8] text-xs font-bold px-2 py-1 rounded-xl">EdTech</span>
+            <h2 class="text-2xl font-bold pt-2">Work name here</h2>
+            <p class="text-[#9C9C9C] pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <button class="bg-[#2AB090] text-white font-bold my-8 px-4 py-2 rounded-md hover:brightness-80">View case study ></button>
+        </div>
+      </div>
+      <footer class="tracking-[8px] bg-[#1B1B1B] text-center text-[#9C9C9C] md:mt-55 lg:mt-0 py-4">Made With <span class="text-red-400">❤</span></footer>
+    </section>
+    
+</body>
+<script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById("dropdown");
+      dropdown.classList.toggle("hidden");
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+      const dropdown = document.getElementById("dropdown");
+      const button = event.target.closest("button");
+      if (!button && !dropdown.contains(event.target)) {
+        dropdown.classList.add("hidden");
+      }
+    });
+  </script>
+</html>
